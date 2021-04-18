@@ -1,0 +1,163 @@
+.toggle {
+	// position: absolute;
+	top: 20px;
+	left: calc(50% - 30%);
+	width: 40px;
+	height: 40px;
+	background: rgb(247, 247, 247);
+	cursor: pointer;
+	border-radius: 6px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&::before {
+		content: "\f185";
+		font-family: fontAwesome;
+		font-size: 24px;
+	}
+}
+body.light .toggle {
+	background: #111527;
+	color: #fff;
+	&::before {
+		content: "\f186";
+	}
+}
+body.light {
+	.nav-items li {
+		color: #fff;
+	}
+	.main-content {
+		animation: myAnim 1s ease 0s 1 normal forwards;
+		background: whitesmoke;
+		.hero-text {
+			color: #000;
+		}
+		h3,
+		h5 {
+			color: #000;
+		}
+	}
+	.wrapper .dynamic-text li::after {
+		background: whitesmoke;
+		border-left: 2px solid #000;
+	}
+	.icons {
+		.icon-holder {
+			.fb {
+				animation: portfolioAnime 4s ease 0s 1 normal forwards;
+				color: rgb(16, 16, 177);
+			}
+			.gh {
+				animation: portfolioAnime 4s ease 0s 1 normal forwards;
+				color: rgba(212, 45, 212, 0.788);
+			}
+			.yt {
+				animation: portfolioAnime 4s ease 0s 1 normal forwards;
+				color: red;
+			}
+		}
+	}
+	.btn-port {
+		background-color: #3858cc;
+		color: #000;
+
+		&:hover {
+			background-color: #037fff;
+		}
+		&:active {
+			background-color: #037fff;
+		}
+		&:focus {
+			background-color: #75b8fc;
+
+			animation: catagories 2s ease 0s 1 normal both;
+		}
+	}
+	.portfolis {
+		background-color: #eff0f1;
+	}
+	.active {
+		background-color: #3858cc;
+	}
+
+	.about-text,
+	.left-section,
+	.right-section,
+	h4,
+	.h-sub-text,
+	.skill-text,
+	.nav-item {
+		color: #000;
+	}
+}
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(-65px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(-28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(-8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+}
+@keyframes catagories {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
