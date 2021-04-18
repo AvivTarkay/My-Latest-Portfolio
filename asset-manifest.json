@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/my-latest-portfolio/static/css/main.86134b48.chunk.css",
+    "main.js": "/my-latest-portfolio/static/js/main.87d9374f.chunk.js",
+    "main.js.map": "/my-latest-portfolio/static/js/main.87d9374f.chunk.js.map",
+    "runtime-main.js": "/my-latest-portfolio/static/js/runtime-main.0f8bc18d.js",
+    "runtime-main.js.map": "/my-latest-portfolio/static/js/runtime-main.0f8bc18d.js.map",
+    "static/js/2.b4b6b512.chunk.js": "/my-latest-portfolio/static/js/2.b4b6b512.chunk.js",
+    "static/js/2.b4b6b512.chunk.js.map": "/my-latest-portfolio/static/js/2.b4b6b512.chunk.js.map",
+    "index.html": "/my-latest-portfolio/index.html",
+    "static/css/main.86134b48.chunk.css.map": "/my-latest-portfolio/static/css/main.86134b48.chunk.css.map",
+    "static/js/2.b4b6b512.chunk.js.LICENSE.txt": "/my-latest-portfolio/static/js/2.b4b6b512.chunk.js.LICENSE.txt",
+    "static/media/about.21ebad10.jpg": "/my-latest-portfolio/static/media/about.21ebad10.jpg",
+    "static/media/avatar.693ea367.png": "/my-latest-portfolio/static/media/avatar.693ea367.png",
+    "static/media/calc.05cf2c86.jpg": "/my-latest-portfolio/static/media/calc.05cf2c86.jpg",
+    "static/media/design.8ecb3043.svg": "/my-latest-portfolio/static/media/design.8ecb3043.svg",
+    "static/media/emailme.a60657eb.svg": "/my-latest-portfolio/static/media/emailme.a60657eb.svg",
+    "static/media/game-dev.20147858.svg": "/my-latest-portfolio/static/media/game-dev.20147858.svg",
+    "static/media/intelligence.11bd2ab2.svg": "/my-latest-portfolio/static/media/intelligence.11bd2ab2.svg",
+    "static/media/location.5cd6776e.svg": "/my-latest-portfolio/static/media/location.5cd6776e.svg",
+    "static/media/lyrics.81278269.jpg": "/my-latest-portfolio/static/media/lyrics.81278269.jpg",
+    "static/media/moviesApp.4cfd1872.jpg": "/my-latest-portfolio/static/media/moviesApp.4cfd1872.jpg",
+    "static/media/phone.ef86e22a.svg": "/my-latest-portfolio/static/media/phone.ef86e22a.svg",
+    "static/media/port5.1330f6cd.jpg": "/my-latest-portfolio/static/media/port5.1330f6cd.jpg",
+    "static/media/port6.ccfe3b5b.jpg": "/my-latest-portfolio/static/media/port6.ccfe3b5b.jpg",
+    "static/media/shopCart.2bc2eb95.jpg": "/my-latest-portfolio/static/media/shopCart.2bc2eb95.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0f8bc18d.js",
+    "static/js/2.b4b6b512.chunk.js",
+    "static/css/main.86134b48.chunk.css",
+    "static/js/main.87d9374f.chunk.js"
+  ]
+}
