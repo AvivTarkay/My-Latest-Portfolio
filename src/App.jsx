@@ -13,9 +13,6 @@ function App() {
 
 	const navClick = () => {
 		setNavToggle(!navToggle);
-		let className = document.querySelector(".sidebar");
-		className.style.display = "visible";
-		return className;
 	};
 
 	return (
