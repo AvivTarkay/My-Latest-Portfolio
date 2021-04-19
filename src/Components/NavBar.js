@@ -17,7 +17,7 @@ function Navbar() {
 							to="/my-latest-portfolio"
 							exact
 							activeClassName="active"
-							className="nav-link"
+							// className="nav-link"
 						>
 							.Home()
 						</NavLink>

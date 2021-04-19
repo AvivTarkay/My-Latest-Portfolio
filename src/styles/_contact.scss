@@ -1,5 +1,6 @@
 .ContactItem {
 	width: 100%;
+
 	// &:not(:last-child) {
 	// 	margin-bottom: 1rem;
 	// }
@@ -20,7 +21,9 @@
 		}
 	}
 }
-
+.contactMainPage {
+	animation: slideIN 1s ease 0s 1 normal none;
+}
 .ContactPage {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
