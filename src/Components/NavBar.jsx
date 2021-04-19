@@ -26,7 +26,7 @@ const Navbar = ({ setHideNav }) => {
 					</li>
 					<li className="nav-item">
 						<NavLink
-							to="/?/about"
+							to="/about"
 							activeClassName="active"
 							onClick={() => {
 								setHideNav(previous => !previous);
@@ -37,7 +37,7 @@ const Navbar = ({ setHideNav }) => {
 					</li>
 					<li className="nav-item">
 						<NavLink
-							to="/?/portfolios"
+							to="/portfolios"
 							activeClassName="active"
 							onClick={() => {
 								setHideNav(previous => !previous);
@@ -48,7 +48,7 @@ const Navbar = ({ setHideNav }) => {
 					</li>
 					<li className="nav-item">
 						<NavLink
-							to="/?/contact"
+							to="/contact"
 							activeClassName="active"
 							onClick={() => {
 								setHideNav(previous => !previous);
