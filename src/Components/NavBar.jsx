@@ -3,7 +3,7 @@ import avatar from "../img/avatar.png";
 import { NavLink } from "react-router-dom";
 import ToggleTheme from "./toggleTheme";
 
-const Navbar = () => {
+const Navbar = ({ hideNav }) => {
 	return (
 		<div className="NavBar">
 			<nav className="nav">
@@ -17,23 +17,38 @@ const Navbar = () => {
 							to="/"
 							exact
 							activeClassName="active"
-							// className="nav-link"
+							onclick={hideNav(previous => !previous)}
 						>
 							.Home()
 						</NavLink>
 					</li>
 					<li className="nav-item">
-						<NavLink to="/about" exact activeClassName="active">
+						<NavLink
+							to="/about"
+							exact
+							activeClassName="active"
+							onclick={hideNav(previous => !previous)}
+						>
 							.About()
 						</NavLink>
 					</li>
 					<li className="nav-item">
-						<NavLink to="/portfolios" exact activeClassName="active">
+						<NavLink
+							to="/portfolios"
+							exact
+							activeClassName="active"
+							onclick={hideNav(previous => !previous)}
+						>
 							.Projects()
 						</NavLink>
 					</li>
 					<li className="nav-item">
-						<NavLink to="/contact" exact activeClassName="active">
+						<NavLink
+							to="/contact"
+							exact
+							activeClassName="active"
+							onclick={hideNav(previous => !previous)}
+						>
 							.Contact()
 						</NavLink>
 					</li>

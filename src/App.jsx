@@ -9,15 +9,17 @@ import "./App.scss";
 
 function App() {
 	const [navToggle, setNavToggle] = useState(true);
+	const [hideNav, setHideNav] = useState(false);
 
 	const navClick = () => {
 		setNavToggle(!navToggle);
+		setHideNav(previous => !previous);
 	};
 
 	return (
 		<div className="App">
 			<div className={`sidebar ${navToggle ? "nav-toggle" : ""}`}>
-				<NavBar />
+				{hideNav && <NavBar hideNav={setHideNav} />}
 			</div>
 			<div className="nav-btn" onClick={navClick}>
 				<div className="lines-1"></div>
@@ -28,9 +30,9 @@ function App() {
 				<div className="content">
 					<Switch>
 						<Route exact path="/" component={HomePage} />
-						<Route exact path="/about" component={AboutPage} />
-						<Route exact path="/portfolios" component={ProjectsPage} />
-						<Route exact path="/contact" component={ContactPage} />
+						<Route path="/my-latest-portfolio/about" component={AboutPage} />
+						<Route path="/portfolios" component={ProjectsPage} />
+						<Route path="/contact" component={ContactPage} />
 					</Switch>
 				</div>
 			</div>
