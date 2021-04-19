@@ -19,6 +19,16 @@ $phone: 480px;
 			transform: translateX(-100%);
 			width: 30%;
 		}
+
+		@media screen and (max-width: 411px) {
+			width: 50%;
+		}
+	}
+	.nav-toggle {
+		@media screen and (max-width: 1000px) {
+			transition: all 0.4s ease-in-out;
+			transform: translateX(0);
+		}
 		@media (max-width: $phone) {
 			width: 16%;
 			height: 100vh;
@@ -32,15 +42,6 @@ $phone: 480px;
 				transform: translateX(-100%);
 				width: 30%;
 			}
-		}
-		@media screen and (max-width: 411px) {
-			width: 50%;
-		}
-	}
-	.nav-toggle {
-		@media screen and (max-width: 1000px) {
-			transition: all 0.4s ease-in-out;
-			transform: translateX(0);
 		}
 	}
 
