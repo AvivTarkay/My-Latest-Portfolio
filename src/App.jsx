@@ -1,6 +1,6 @@
 import NavBar from "./Components/NavBar";
 import HomePage from "./Pages/HomePage";
-import { Switch, Route } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 import AboutPage from "./Pages/AboutPage";
 import ProjectsPage from "./Pages/ProjectsPage";
 import ContactPage from "./Pages/ContactPage";
@@ -26,12 +26,12 @@ function App() {
 			</div>
 			<div className="main-content">
 				<div className="content">
-					<Switch>
+					<HashRouter>
 						<Route exact path="/my-latest-portfolio" component={HomePage} />
 						<Route exact path="/about" component={AboutPage} />
 						<Route exact path="/portfolios" component={ProjectsPage} />
 						<Route exact path="/contact" component={ContactPage} />
-					</Switch>
+					</HashRouter>
 				</div>
 			</div>
 		</div>
