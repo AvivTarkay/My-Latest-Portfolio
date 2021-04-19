@@ -12,7 +12,7 @@ function App() {
 	const [hideNav, setHideNav] = useState(false);
 
 	const navClick = () => {
-		setNavToggle(!navToggle);
+		setNavToggle(currentState => !currentState);
 	};
 
 	return (
