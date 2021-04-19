@@ -13,8 +13,8 @@ function App() {
 
 	const navClick = () => {
 		setNavToggle(!navToggle);
-		let className = `sidebar ${navToggle ? "nav-toggle" : ""}`;
-		$(`.${className}`).style.display = "visible";
+		let className = document.querySelector(".sidebar");
+		className.style.display = "visible";
 		return className;
 	};
 
