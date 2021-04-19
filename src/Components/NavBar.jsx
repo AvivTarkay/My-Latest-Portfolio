@@ -3,7 +3,7 @@ import avatar from "../img/avatar.png";
 import { NavLink } from "react-router-dom";
 import ToggleTheme from "./toggleTheme";
 
-function Navbar() {
+const Navbar = () => {
 	return (
 		<div className="NavBar">
 			<nav className="nav">
@@ -45,6 +45,6 @@ function Navbar() {
 			</nav>
 		</div>
 	);
-}
+};
 
 export default Navbar;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function ToggleTheme() {
+const ToggleTheme = () => {
 	const body = document.querySelector("body");
 
 	const toggleFunction = () => {
@@ -8,6 +8,6 @@ function ToggleTheme() {
 	};
 
 	return <div className="toggle" onClick={toggleFunction}></div>;
-}
+};
 
 export default ToggleTheme;

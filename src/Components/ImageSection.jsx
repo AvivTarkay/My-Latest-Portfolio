@@ -4,7 +4,7 @@ import axios from "axios";
 import saveAs from "file-saver";
 import about from "../img/about.jpg";
 
-function ImageSection() {
+const ImageSection = () => {
 	const downloadCv = () => {
 		let link = "./CV AvivTarkay.pdf";
 		axios({
@@ -12,8 +12,8 @@ function ImageSection() {
 			method: "GET",
 			responseType: "blob", // important
 		}).then(response => {
-			const url = window.URL.createObjectURL(new Blob([response.data]));
-			var blob = new Blob([response.data], {
+			var url = window.URL.createObjectURL(new Blob([response.data]));
+			const blob = new Blob([response.data], {
 				type: "text/plain;charset=utf-8",
 			});
 			saveAs(blob, link);
@@ -60,6 +60,6 @@ function ImageSection() {
 			</div>
 		</section>
 	);
-}
+};
 
 export default ImageSection;

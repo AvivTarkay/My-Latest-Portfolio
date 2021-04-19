@@ -8,7 +8,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faChrome } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const portfolios = [
+const Projects = [
 	{
 		id: 1,
 		category: "JavaScript",
@@ -76,4 +76,4 @@ const portfolios = [
 	},
 ];
 
-export default portfolios;
+export default Projects;

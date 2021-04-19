@@ -2,24 +2,21 @@ import React from "react";
 import Categories from "../Components/Categories";
 import MenuItems from "../Components/projectsItems";
 import Tittle from "../Components/Tittle";
-import portfolios from "../Components/allProjects";
+import Projects from "../Components/allProjects";
 import { useState } from "react";
 
-const allCategories = [
-	"All",
-	...new Set(portfolios.map(item => item.category)),
-];
+const allCategories = ["All", ...new Set(Projects.map(item => item.category))];
 
 function ProjectsPage() {
 	const [categories, setCategories] = useState(allCategories);
-	const [projectsItems, setProjectsItems] = useState(portfolios);
+	const [projectsItems, setProjectsItems] = useState(Projects);
 
 	const filter = category => {
 		if (category === "All") {
-			setProjectsItems(portfolios);
+			setProjectsItems(Projects);
 			return;
 		}
-		const filteredData = portfolios.filter(item => {
+		const filteredData = Projects.filter(item => {
 			return item.category === category;
 		});
 		setProjectsItems(filteredData);

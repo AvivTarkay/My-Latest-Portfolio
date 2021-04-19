@@ -1,6 +1,6 @@
 import React from "react";
 
-function MenuItems({ menuItem }) {
+const MenuItems = ({ menuItem }) => {
 	return (
 		<div className="portfolis">
 			{React.Children.toArray(
@@ -23,6 +23,6 @@ function MenuItems({ menuItem }) {
 			)}
 		</div>
 	);
-}
+};
 
 export default MenuItems;
