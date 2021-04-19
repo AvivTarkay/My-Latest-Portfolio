@@ -27,7 +27,7 @@ function App() {
 			<div className="main-content">
 				<div className="content">
 					<Switch>
-						<Route exact path="/my-latest-portfolio" component={HomePage} />
+						<Route exact path="/" component={HomePage} />
 						<Route exact path="/about" component={AboutPage} />
 						<Route exact path="/portfolios" component={ProjectsPage} />
 						<Route exact path="/contact" component={ContactPage} />

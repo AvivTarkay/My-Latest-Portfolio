@@ -14,7 +14,7 @@ const Navbar = () => {
 				<ul className="nav-items">
 					<li className="nav-item">
 						<NavLink
-							to="/my-latest-portfolio"
+							to="/"
 							exact
 							activeClassName="active"
 							// className="nav-link"
