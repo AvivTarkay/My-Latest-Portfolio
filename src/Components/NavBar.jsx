@@ -3,7 +3,7 @@ import avatar from "../img/avatar.png";
 import { NavLink } from "react-router-dom";
 import ToggleTheme from "./toggleTheme";
 
-const Navbar = ({ hideNav }) => {
+const Navbar = ({ setHideNav }) => {
 	return (
 		<div className="NavBar">
 			<nav className="nav">
@@ -17,7 +17,9 @@ const Navbar = ({ hideNav }) => {
 							to="/"
 							exact
 							activeClassName="active"
-							onclick={hideNav(previous => !previous)}
+							onClick={() => {
+								setHideNav(previous => !previous);
+							}}
 						>
 							.Home()
 						</NavLink>
@@ -25,9 +27,10 @@ const Navbar = ({ hideNav }) => {
 					<li className="nav-item">
 						<NavLink
 							to="/about"
-							exact
 							activeClassName="active"
-							onclick={hideNav(previous => !previous)}
+							onClick={() => {
+								setHideNav(previous => !previous);
+							}}
 						>
 							.About()
 						</NavLink>
@@ -35,9 +38,10 @@ const Navbar = ({ hideNav }) => {
 					<li className="nav-item">
 						<NavLink
 							to="/portfolios"
-							exact
 							activeClassName="active"
-							onclick={hideNav(previous => !previous)}
+							onClick={() => {
+								setHideNav(previous => !previous);
+							}}
 						>
 							.Projects()
 						</NavLink>
@@ -45,9 +49,10 @@ const Navbar = ({ hideNav }) => {
 					<li className="nav-item">
 						<NavLink
 							to="/contact"
-							exact
 							activeClassName="active"
-							onclick={hideNav(previous => !previous)}
+							onClick={() => {
+								setHideNav(previous => !previous);
+							}}
 						>
 							.Contact()
 						</NavLink>

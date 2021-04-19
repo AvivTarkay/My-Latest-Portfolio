@@ -13,13 +13,12 @@ function App() {
 
 	const navClick = () => {
 		setNavToggle(!navToggle);
-		setHideNav(previous => !previous);
 	};
 
 	return (
 		<div className="App">
 			<div className={`sidebar ${navToggle ? "nav-toggle" : ""}`}>
-				{hideNav && <NavBar hideNav={setHideNav} />}
+				<NavBar setHideNav={setNavToggle} />
 			</div>
 			<div className="nav-btn" onClick={navClick}>
 				<div className="lines-1"></div>
@@ -30,7 +29,7 @@ function App() {
 				<div className="content">
 					<Switch>
 						<Route exact path="/" component={HomePage} />
-						<Route path="/my-latest-portfolio/about" component={AboutPage} />
+						<Route path="/about" component={AboutPage} />
 						<Route path="/portfolios" component={ProjectsPage} />
 						<Route path="/contact" component={ContactPage} />
 					</Switch>
