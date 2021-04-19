@@ -13,7 +13,12 @@ function Navbar() {
 
 				<ul className="nav-items">
 					<li className="nav-item">
-						<NavLink to="/" exact activeClassName="active" className="nav-link">
+						<NavLink
+							to="/my-latest-portfolio"
+							exact
+							activeClassName="active"
+							className="nav-link"
+						>
 							.Home()
 						</NavLink>
 					</li>
