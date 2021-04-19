@@ -1,6 +1,6 @@
 {
-	"homepage": "http://AvivTarkay.github.io/my-latest-portfolio",
-	"name": "portofolioyt",
+	"homepage": "http://avivtarkay.github.io/my-latest-portfolio",
+	"name": "my-portfolio",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
