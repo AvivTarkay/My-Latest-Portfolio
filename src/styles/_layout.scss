@@ -1,6 +1,9 @@
 // :root{
 // 	--main-bg-color: #ebf5fc;
-
+$desktop: 1200px;
+$laptop: 1024px;
+$tablet: 768px;
+$phone: 480px;
 // }
 .App {
 	.sidebar {
@@ -12,6 +15,11 @@
 		border-right: 1px solid #2e344e;
 		transform-origin: left;
 		@media screen and (max-width: 1000px) {
+			transition: all 0.4s ease-in-out;
+			transform: translateX(-100%);
+			width: 30%;
+		}
+		@media (max-width: $phone) {
 			transition: all 0.4s ease-in-out;
 			transform: translateX(-100%);
 			width: 30%;
