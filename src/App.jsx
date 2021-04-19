@@ -13,6 +13,9 @@ function App() {
 
 	const navClick = () => {
 		setNavToggle(!navToggle);
+		let className = `sidebar ${navToggle ? "nav-toggle" : ""}`;
+		$(`.${className}`).style.display = "visible";
+		return className;
 	};
 
 	return (
