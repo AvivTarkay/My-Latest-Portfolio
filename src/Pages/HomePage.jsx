@@ -48,17 +48,7 @@ function HomePage() {
 					I like to code things from scratch, and enjoy bringing ideas to life
 					in the browser.
 				</p>
-				{/* <div className="icons">
-					<Link to="test" className="icon-holder">
-						<FontAwesomeIcon icon={faFacebook} className="icon fb" />
-					</Link>
-					<Link to="test" className="icon-holder">
-						<FontAwesomeIcon icon={faGithub} className="icon gh" />
-					</Link>
-					<Link to="test" className="icon-holder">
-						<FontAwesomeIcon icon={faYoutube} className="icon yt" />
-					</Link>
-				</div> */}
+
 				<section className="socialContact">
 					<div className="divsWrapper">
 						<div className="plusBtn" onClick={onclick}>
