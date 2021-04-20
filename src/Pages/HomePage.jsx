@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+import $ from "jquery";
 
 function HomePage() {
+	const [showDiv, setShowDiv] = useState(false);
+	const [flag, setFlag] = useState(true);
+
+	const onclick = () => {
+		setFlag(currentState => !currentState);
+		setShowDiv(currentState => !currentState);
+		if (flag) {
+			$(".plusBtn").css({ transform: "rotate(45deg)" });
+		} else {
+			$(".plusBtn").css({ transform: "rotate(0deg)" });
+		}
+	};
 	return (
 		<div className="HomePage">
 			<header className="hero">
@@ -33,7 +48,7 @@ function HomePage() {
 					I like to code things from scratch, and enjoy bringing ideas to life
 					in the browser.
 				</p>
-				<div className="icons">
+				{/* <div className="icons">
 					<Link to="test" className="icon-holder">
 						<FontAwesomeIcon icon={faFacebook} className="icon fb" />
 					</Link>
@@ -43,7 +58,34 @@ function HomePage() {
 					<Link to="test" className="icon-holder">
 						<FontAwesomeIcon icon={faYoutube} className="icon yt" />
 					</Link>
-				</div>
+				</div> */}
+				<section className="socialContact">
+					<div className="divsWrapper">
+						<div className="plusBtn" onClick={onclick}>
+							&#43;
+						</div>
+						<div className="shareBtn">
+							<div className={`socialPart${showDiv ? "" : "HideDiv"}`}>
+								<div className="social1">
+									<FontAwesomeIcon icon={faFacebook} className="icon fb" />
+								</div>
+								<div className="social2">
+									<FontAwesomeIcon icon={faGithub} className="icon fb" />
+								</div>
+								<div className="social3">
+									<FontAwesomeIcon icon={faLinkedin} className="icon fb" />
+								</div>
+								<div className="social4">
+									<FontAwesomeIcon icon={faInstagram} className="icon fb" />
+								</div>
+								<div className="social5">
+									<FontAwesomeIcon icon={faTwitter} className="icon fb" />
+								</div>
+							</div>
+							<div className={`msg${showDiv ? "Slide" : ""}`}>Contact Me</div>
+						</div>
+					</div>
+				</section>
 			</header>
 		</div>
 	);
