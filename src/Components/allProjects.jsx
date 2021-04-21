@@ -31,7 +31,7 @@ const Projects = [
 	},
 	{
 		id: 3,
-		category: "React",
+		category: "Redux",
 		link1: "https://github.com/AvivTarkay/UsersManagement",
 		link2: "https://avivtarkay.github.io/ShoppingCart-React-App/",
 		icon1: <FontAwesomeIcon icon={faGithub} className="icon gh" />,
