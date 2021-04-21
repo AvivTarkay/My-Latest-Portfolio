@@ -56,21 +56,34 @@ function HomePage() {
 						</div>
 						<div className="shareBtn">
 							<div className={`socialPart${showDiv ? "" : "HideDiv"}`}>
-								<div className="social1">
-									<FontAwesomeIcon icon={faFacebook} className="icon fb" />
-								</div>
-								<div className="social2">
-									<FontAwesomeIcon icon={faGithub} className="icon fb" />
-								</div>
-								<div className="social3">
-									<FontAwesomeIcon icon={faLinkedin} className="icon fb" />
-								</div>
-								<div className="social4">
-									<FontAwesomeIcon icon={faInstagram} className="icon fb" />
-								</div>
-								<div className="social5">
-									<FontAwesomeIcon icon={faTwitter} className="icon fb" />
-								</div>
+								<a href="https://www.facebook.com/abushtarkay/" target="_blank">
+									<div className="social1">
+										<FontAwesomeIcon icon={faFacebook} className="icon fb" />
+									</div>
+								</a>
+								<a href="https://github.com/AvivTarkay" target="_blank">
+									<div className="social2">
+										<FontAwesomeIcon icon={faGithub} className="icon fb" />
+									</div>
+								</a>
+								<a
+									href="https://www.linkedin.com/in/aviv-tarkay-7b1647200"
+									target="_blank"
+								>
+									<div className="social3">
+										<FontAwesomeIcon icon={faLinkedin} className="icon fb" />
+									</div>
+								</a>
+								<a href="">
+									<div className="social4">
+										<FontAwesomeIcon icon={faInstagram} className="icon fb" />
+									</div>
+								</a>
+								<a href="https://twitter.com/AvivTarkay?s=09" target="_blank">
+									<div className="social5">
+										<FontAwesomeIcon icon={faTwitter} className="icon fb" />
+									</div>
+								</a>
 							</div>
 							<div className={`msg${showDiv ? "Slide" : ""}`}>Contact Me</div>
 						</div>
