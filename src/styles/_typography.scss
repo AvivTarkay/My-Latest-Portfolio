@@ -132,7 +132,7 @@ $phone: 480px;
 		}
 	}
 	.shareBtn {
-		height: 9vh;
+		height: 10vh;
 		width: 50%;
 		display: flex;
 		flex-direction: column;
@@ -153,15 +153,20 @@ $phone: 480px;
 			display: flex;
 			gap: 3%;
 			margin-top: 6%;
-			background: #fff;
+			align-items: center;
+			justify-content: flex-start;
 			animation: contactSlide 1s ease 0s 1 normal forwards;
 			@media screen and (max-width: $desktop) {
-				position: relative;
-				left: 20px;
+				// position: relative;
+				// left: 20px;
 			}
 			@media screen and (max-width: $phone) {
+				// position: relative;
+				//  left: 8%;
+			}
+			@media screen and (max-width: 360px) {
 				position: relative;
-				left: -2px;
+				left: -1%;
 			}
 		}
 		.social1,
@@ -214,7 +219,7 @@ $phone: 480px;
 			}
 			@media screen and (max-width: $phone) {
 				position: relative;
-				right: 35px;
+				right: 25px;
 			}
 		}
 		.msgSlide {
@@ -231,7 +236,7 @@ $phone: 480px;
 			}
 			@media (max-width: $phone) {
 				position: relative;
-				right: 35px;
+				right: 25px;
 			}
 			@keyframes slideOut {
 				0% {
