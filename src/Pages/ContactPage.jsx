@@ -23,7 +23,7 @@ function ContactPage() {
 					</a>
 					<ContactItem
 						icon={location}
-						text1={"Bnei-Re'em, Southern District"}
+						text1={"Southern District"}
 						text2={"Israel"}
 						title={"Address"}
 					/>

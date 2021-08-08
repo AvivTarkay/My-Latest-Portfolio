@@ -6,7 +6,7 @@ import about from "../img/about.jpg";
 
 const ImageSection = () => {
 	const downloadCv = () => {
-		let link = "./CV AvivTarkay.pdf";
+		let link = "./CV_AvivTarkay(Nir).pdf";
 		axios({
 			url: link, //your url
 			method: "GET",
